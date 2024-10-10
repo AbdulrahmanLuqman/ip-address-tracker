@@ -10,21 +10,19 @@ const Map = ({isLoaded, marker}) => {
     //   iconSize: [38, 38]
     // })
   return (
-    <div className="h-full w-full">
+    <>
       {
         isLoaded? 
         <MapContainer center={marker} zoom={13}>
           <TileLayer  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            // url='https://tile.openstreetmap.org/{z}/{x}/{y}.png'
             url='https://tile.openstreetmap.org/{z}/{x}/{y}.png'
-            // url='https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png'
           />
           <Marker position={marker}>
             <Popup><h3>lol</h3></Popup>
           </Marker>
         </MapContainer>: <>loading...</>
       }
-    </div>
+    </>
   )
 }
 
