@@ -1,6 +1,7 @@
 // https://geo.ipify.org/api/v2/country?apiKey=at_dERRBirNHbCHu1WkjMWSzhTE10pfU
 
 
+import PropTypes from "prop-types"
 import arrow from "../assets/icon-arrow.svg"
 import Results from "./Results"
 const SearchBar = (props) => {
@@ -24,4 +25,9 @@ const SearchBar = (props) => {
   )
 }
 
-export default SearchBar
+export default SearchBar;
+
+// props validation
+SearchBar.propTypes = {
+  ipAddress: PropTypes.string
+}

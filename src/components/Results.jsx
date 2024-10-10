@@ -50,9 +50,13 @@ export default Results;
 // props validation
 Results.propTypes = {
   geo: PropTypes.shape({
+    ip: PropTypes.string,
     location: PropTypes.shape({
-      lat: PropTypes.number,
-      lng: PropTypes.number,
+      city: PropTypes.string,
+      country: PropTypes.string,
+      postalCode: PropTypes.string,
+      timezone: PropTypes.string,
     }),
+    isp: PropTypes.string,
   })
 }
