@@ -4,19 +4,11 @@ import { useEffect, useState } from "react"
 // import { Icon } from "leaflet"
 // import customIconUrl from "../assets/icon-arrow.svg"
 
-const Map = ({geolocation, isLoaded, marker, setMarker}) => {
+const Map = ({isLoaded, marker,setMarker,geolocation}) => {
 
-  // const updateMarker = () =>{
-  //  if(isLoaded && geolocation){
-  //   setMarker([geolocation.location.lat, geolocation.location.lng])
-  //  }else{
-  //   setMarker([])
-  //  }
-  // }
-
-  // useEffect(()=>{
-  //   updateMarker()
-  // },[isLoaded,geolocation])
+  useEffect(()=>{
+    setMarker()
+  },[geolocation])
 
     // const customIcon = new Icon({
     //   iconUrl: "https://www.flaticon.com/free-icon/pin_484167?term=location&page=1&position=8&origin=search&related_id=484167",
