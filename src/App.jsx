@@ -39,7 +39,7 @@ function App() {
     <main>
       <Background />
       <SearchBar />
-      <Map marker={marker} setMarker={setMarker} isLoaded={isLoaded} geolocation={geolocation} />
+      <Map marker={marker} isLoaded={isLoaded}/>
     </main>
   )
 }

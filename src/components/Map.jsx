@@ -4,12 +4,7 @@ import { useEffect, useState } from "react"
 // import { Icon } from "leaflet"
 // import customIconUrl from "../assets/icon-arrow.svg"
 
-const Map = ({isLoaded, marker,setMarker,geolocation}) => {
-
-  useEffect(()=>{
-    setMarker()
-  },[geolocation])
-
+const Map = ({isLoaded, marker}) => {
     // const customIcon = new Icon({
     //   iconUrl: "https://www.flaticon.com/free-icon/pin_484167?term=location&page=1&position=8&origin=search&related_id=484167",
     //   iconSize: [38, 38]
