@@ -3,8 +3,10 @@ import 'leaflet/dist/leaflet.css'
 // import { Icon } from "leaflet"
 // import customIconUrl from "../assets/icon-arrow.svg"
 
-const Map = () => {
-    const marker = [6.5244, 3.3792]
+const Map = (props) => {
+  const geolocation = props.geo
+  console.log(geolocation.location.lat)
+    const marker = [geolocation.location.lat, geolocation.location.lng]
 
     
 
@@ -13,7 +15,7 @@ const Map = () => {
     //   iconSize: [38, 38]
     // })
   return (
-    <MapContainer center={[6.5244, 3.3792]} zoom={13}>
+    <MapContainer center={[geolocation.location.lat, geolocation.location.lng]} zoom={13}>
         <TileLayer 
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           // url='https://tile.openstreetmap.org/{z}/{x}/{y}.png'
