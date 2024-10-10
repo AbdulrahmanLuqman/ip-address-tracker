@@ -33,7 +33,7 @@ function App() {
   return (
     <main>
       <Background />
-      <SearchBar />
+      <SearchBar geo={geolocation} />
       <Map geo={geolocation} />
     </main>
   )
