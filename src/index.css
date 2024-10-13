@@ -5,4 +5,57 @@
 .leaflet-container {
     z-index: -1;
     height: 65vh;
+    width: 100%;
+}
+
+.circle {
+    background-color: #374151;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.one {
+    animation-name: bounceOne;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.two {
+    animation-name: bounceTwo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 300ms;
+}
+.three {
+    animation-name: bounceThree;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 600ms;
+}
+
+@keyframes bounceOne {
+    from {
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(15px);
+    }
+}
+@keyframes bounceTwo {
+    from {
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(15px);
+    }
+}
+@keyframes bounceThree {
+    from {
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(15px);
+    }
 }
