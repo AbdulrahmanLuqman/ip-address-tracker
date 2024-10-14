@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 
-const Results = ({geolocation, setGeolocation}) => {
+const Results = ({geolocation}) => {
     console.log(geolocation)
     const ipAddresss = geolocation.ip
     const location = `${geolocation.country_name}, ${geolocation.state_prov}, ${geolocation.zipcode}`

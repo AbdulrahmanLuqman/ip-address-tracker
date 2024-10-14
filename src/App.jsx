@@ -1,12 +1,12 @@
 import Background from "./components/Background"
-import Loading from "./components/Loading"
+// import Loading from "./components/Loading"
 import Map from "./components/Map"
 import SearchBar from "./components/SearchBar"
 
 import { useEffect, useState } from "react"
 
 function App() {
-  const [geolocation, setGeolocation] = useState([])
+  const [geolocation, setGeolocation] = useState({})
   const [isLoaded, setIsLoaded] = useState(false)
   const [userIp, setUserIp] = useState("")
   // const [marker, setMarker] = useState({})

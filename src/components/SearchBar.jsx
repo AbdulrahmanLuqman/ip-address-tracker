@@ -7,9 +7,18 @@ const SearchBar = ({geolocation, setGeolocation, userIp, setUserIp}) => {
 
   // const [ipAddresss, setIpAddress] = useState(geolocation.ip)
 
+  const validateIp = (ip) => {
+    const ipParts = ip.split(".");
+    return ipParts.length === 4 && ipParts.every(part => !!part);
+  }
+
   // setGeolocation({ipAddresss: "192.168.32.55"})
   const handleIpAddress = (e)=> {
     setInputValue(e.target.value)
+    
+    if(validateIp(e.target.value)) {
+      setUserIp(e.target.value)
+    }
   }
   const handleClick = ()=> {
     setUserIp(inputValue)
