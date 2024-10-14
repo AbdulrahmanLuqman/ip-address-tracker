@@ -22,8 +22,8 @@ const Map = ({isLoaded, geolocation}) => {
         isLoaded ? 
         <MapContainer center={marker} zoom={13} zoomControl={true} scrollWheelZoom={true}>
           <TileLayer  
-             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-              url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           <Marker position={marker} icon={customIcon}>
             <Popup><h3>lol</h3></Popup>
